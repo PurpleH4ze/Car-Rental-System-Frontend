@@ -55,7 +55,7 @@ class AddCar extends Component {
       <Container>
         <Row>
           <Col sm="12" md={{ size: 6, offset: 3 }}>
-            <h3>Add New Customer</h3>
+            <h3>Add New Car</h3>
             <InputGroup>
               <Input
                 name="carLicensePlate"

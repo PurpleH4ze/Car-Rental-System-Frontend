@@ -26,6 +26,16 @@ class CarList extends Component {
       });
   };
 
+  deleteCar = (id) => {
+    axios
+      .delete(`http://localhost:3000/cars/${id}`)
+      .then((res) => {
+        console.log(res);
+        this.props.history.push("/");
+      })
+      .catch((err) => console.log(err));
+  };
+
   render() {
     return (
       <div>

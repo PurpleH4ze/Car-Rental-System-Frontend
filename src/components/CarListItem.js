@@ -1,9 +1,12 @@
 import React from "react";
 import { Table } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const CarListItem = (props) => {
+  console.log(props);
   const { cars } = props;
   console.log(cars);
+
   return (
     <div>
       <Table striped>
@@ -14,6 +17,7 @@ const CarListItem = (props) => {
             <th>Car Model</th>
             <th>Car Gear Box</th>
             <th>Per Rate Day</th>
+            <th> </th>
           </tr>
         </thead>
         <tbody>
@@ -24,6 +28,12 @@ const CarListItem = (props) => {
               <td>{car.carModel}</td>
               <td>{car.carGearBox}</td>
               <td>${car.carRatePerDay}</td>
+              <Link
+                className="btn btn-secondary"
+                to={`/carEdit/${car.carLicensePlate}`}
+              >
+                Details
+              </Link>
             </tr>
           ))}
         </tbody>
