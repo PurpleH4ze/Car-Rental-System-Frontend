@@ -161,7 +161,7 @@ class CarEdit extends Component {
               <Button onClick={this.deleteCar} color="danger" size="lg" block>
                 Delete Car
               </Button>
-              <Button outline block color="primary" href="/">
+              <Button outline block color="primary" href="/admin">
                 Back
               </Button>
             </Col>
