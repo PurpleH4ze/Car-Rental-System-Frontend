@@ -24,6 +24,9 @@ class NavBar extends Component {
               <NavItem>
                 <NavLink href="/addCar">Add Car</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/customers">Customers</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

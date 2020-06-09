@@ -6,6 +6,8 @@ import AddCustomer from "./components/AddCustomer";
 import AddCar from "./components/AddCar";
 import HomePage from "./components/HomePage";
 import CarEdit from "./components/CarEdit";
+import CustomerList from "./components/CustomerList";
+import CustomerEdit from "./components/CustomerEdit";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/addCustomer" component={AddCustomer} />
         <Route path="/addCar" component={AddCar} />
         <Route path="/carEdit/:id" component={CarEdit} />
+        <Route path="/customers" component={CustomerList} />
+        <Route path="/customerEdit/:id" component={CustomerEdit} />
       </Container>
     </Router>
   );
