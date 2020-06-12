@@ -10,6 +10,8 @@ import CustomerEdit from "./components/CustomerEdit";
 import CustomerPage from "./components/CustomerPage";
 import AdminPage from "./components/AdminPage";
 import Search from "./components/Search";
+import BookingPage from "./components/BookingPage";
+import ExistCustomer from "./components/ExistCustomer";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path="/customerPage" component={CustomerPage} />
         <Route path="/customerPage/search" component={Search} />
         <Route path="/admin" component={AdminPage} />
+        <Route path="/bookingpage/:carLicensePlate" component={BookingPage} />
       </Container>
     </Router>
   );
