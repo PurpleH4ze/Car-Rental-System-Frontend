@@ -11,6 +11,7 @@ class BookingPage extends Component {
       yes: false,
       no: false,
       carLicensePlate: this.props.match.params.carLicensePlate,
+      car_category_id: this.props.match.params.category_id
     };
   }
   render() {
@@ -18,10 +19,10 @@ class BookingPage extends Component {
     const no = this.state.no;
     let button;
     if (yes) {
-      button = <ExistCustomer carLicensePlate={this.state.carLicensePlate} />;
+      button = <ExistCustomer history={this.props.history} location = {this.props.location} car_category_id={this.state.car_category_id} carLicensePlate={this.state.carLicensePlate} />;
     } else if (no) {
       button = (
-        <NonExistCustomer carLicensePlate={this.state.carLicensePlate} />
+        <NonExistCustomer history={this.props.history} location = {this.props.location} car_category_id={this.state.car_category_id} carLicensePlate={this.state.carLicensePlate} />
       );
     }
     return (

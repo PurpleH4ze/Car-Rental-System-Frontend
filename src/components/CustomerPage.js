@@ -9,7 +9,7 @@ class CustomerPage extends Component {
       <Container>
         <NavBarCust />
         <h2 className="p-2 text-center flex-fill">Rent A Car</h2>
-        <SearchCar />
+        <SearchCar history={this.props.history} location = {this.props.location} />
       </Container>
     );
   }

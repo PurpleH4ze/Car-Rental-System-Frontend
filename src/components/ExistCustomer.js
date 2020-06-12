@@ -12,9 +12,9 @@ class ExistCustomer extends Component {
       bookingReturnDateTime: new Date(),
       customer_id: "",
       carLicensePlate: this.props.carLicensePlate,
+      category_id: this.props.car_category_id,
       name: "",
       lastName: "",
-      phoneNumber: "",
       verification: false,
     };
   }
@@ -66,15 +66,17 @@ class ExistCustomer extends Component {
       bookingReturnDateTime: this.state.bookingReturnDateTime,
       customer_id: this.state.customer_id,
       carLicensePlate: this.state.carLicensePlate,
+      car_category_id: this.state.category_id,
     };
     console.log(booking);
 
-    /*axios
-      .post("http://localhost:3000/addBooking", booking)
+    axios
+      .post("http://localhost:3000/bookings/addBooking", booking)
       .then((res) => console.log(res.data))
       .catch((err) => {
         console.log(err);
-      });*/
+      });
+    this.props.history.push("/customerPage");
   };
 
   render() {
@@ -117,15 +119,6 @@ class ExistCustomer extends Component {
         <Button onClick={this.getCustomerId} color="secondary" size="lg" block>
           Verify
         </Button>
-        <br />
-        <InputGroup>
-          <Input
-            name="phoneNumber"
-            onChange={this.onChange}
-            value={this.state.phoneNumber}
-            placeholder="Phone Number"
-          />
-        </InputGroup>
         <br />
         <InputGroup>
           <DatePicker

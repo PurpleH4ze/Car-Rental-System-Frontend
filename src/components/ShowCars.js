@@ -31,7 +31,7 @@ const ShowCars = (props) => {
             <CardText>Rate Per Day: {car.carRatePerDay}</CardText>
             <Link
               className="btn btn-secondary btn-lg col"
-              to={`/bookingpage/${car.carLicensePlate}`}
+              to={`/bookingpage/${car.carLicensePlate}/${car.category_id}`}
             >
               Select Car
             </Link>

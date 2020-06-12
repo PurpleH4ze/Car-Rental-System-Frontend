@@ -27,7 +27,7 @@ function App() {
         <Route path="/customerPage" component={CustomerPage} />
         <Route path="/customerPage/search" component={Search} />
         <Route path="/admin" component={AdminPage} />
-        <Route path="/bookingpage/:carLicensePlate" component={BookingPage} />
+        <Route path="/bookingpage/:carLicensePlate/:category_id" component={BookingPage} />
       </Container>
     </Router>
   );
