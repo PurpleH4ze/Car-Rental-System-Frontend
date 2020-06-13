@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CustomerListItem from "./CustomerListItem";
 import axios from "axios";
+import NavBar from "./NavBar";
 
 class CustomerList extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class CustomerList extends Component {
   render() {
     return (
       <div>
+        <NavBar/>
         <CustomerListItem customers={this.state.customers} />
       </div>
     );

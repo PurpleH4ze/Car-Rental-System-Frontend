@@ -12,6 +12,7 @@ import AdminPage from "./components/AdminPage";
 import Search from "./components/Search";
 import BookingPage from "./components/BookingPage";
 import ExistCustomer from "./components/ExistCustomer";
+import BookingList from "./components/BookingList";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/addCar" component={AddCar} />
         <Route path="/carEdit/:id" component={CarEdit} />
         <Route path="/customers" component={CustomerList} />
+        <Route path="/allBooking" component={BookingList} />
         <Route path="/customerEdit/:id" component={CustomerEdit} />
         <Route path="/customerPage" component={CustomerPage} />
         <Route path="/customerPage/search" component={Search} />

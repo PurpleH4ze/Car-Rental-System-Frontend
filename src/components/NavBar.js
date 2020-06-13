@@ -27,6 +27,9 @@ class NavBar extends Component {
               <NavItem>
                 <NavLink href="/customers">Customers</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/allBooking">See All Booking</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
