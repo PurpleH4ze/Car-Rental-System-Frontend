@@ -41,12 +41,7 @@ class ExistCustomer extends Component {
       [e.target.name]: e.target.value,
     });
   };
-  localDay = (time) => {
-    var minutesOffset = time.getTimezoneOffset();
-    var millisecondsOffset = minutesOffset * 60 * 1000;
-    var local = new Date(time - millisecondsOffset);
-    return local.toISOString().substr(0, 10);
-  };
+  
   onChangeDate = (startDate) => {
     this.setState({
       bookingPickUpDateTime: startDate,

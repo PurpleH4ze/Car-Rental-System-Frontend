@@ -83,7 +83,7 @@ class CustomerEdit extends Component {
         console.log(err);
       });
 
-    this.props.history.push("/");
+    this.props.history.goBack();
   };
 
   render() {

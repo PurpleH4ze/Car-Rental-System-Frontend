@@ -8,7 +8,7 @@ const BookingListItem = (props) => {
 
   return (
     <div>
-      <Table striped>
+      <Table bordered>
         <thead>
           <tr>
             <th>#</th>

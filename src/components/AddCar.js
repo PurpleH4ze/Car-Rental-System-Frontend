@@ -125,6 +125,15 @@ class AddCar extends Component {
             >
               Add Car
             </Button>
+            <Button
+              onClick={() => this.props.history.goBack()}
+              color="primary"
+              size="lg"
+              block
+              outline
+            >
+              Back
+            </Button>
           </Col>
         </Row>
       </Container>

@@ -11,8 +11,8 @@ import CustomerPage from "./components/CustomerPage";
 import AdminPage from "./components/AdminPage";
 import Search from "./components/Search";
 import BookingPage from "./components/BookingPage";
-import ExistCustomer from "./components/ExistCustomer";
 import BookingList from "./components/BookingList";
+import BookingEdit from './components/BookingEdit';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
         <Route path="/carEdit/:id" component={CarEdit} />
         <Route path="/customers" component={CustomerList} />
         <Route path="/allBooking" component={BookingList} />
+        <Route path="/bookingsEdit/:bookingId" component={BookingEdit} />
         <Route path="/customerEdit/:id" component={CustomerEdit} />
         <Route path="/customerPage" component={CustomerPage} />
         <Route path="/customerPage/search" component={Search} />

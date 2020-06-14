@@ -120,6 +120,15 @@ class AddCustomer extends Component {
             >
               Add Customer
             </Button>
+            <Button
+              onClick={() => this.props.history.goBack()}
+              color="primary"
+              size="lg"
+              block
+              outline
+            >
+              Back
+            </Button>
           </Col>
         </Row>
       </Container>
